@@ -13,3 +13,57 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  margin: 15px;
+  background-color: #3A3042;
+}
+
+.container{
+    margin: auto;
+    width: 50%;
+    border: 3px solid #FFE19C;
+    padding: 10px;
+  }
+
+li {
+  list-style: none;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.title{
+  color: white;
+  opacity: 0.9;
+}
+
+.bordered-list {
+  border: 2px solid #FFE19C;
+  width: 80%;
+}
+
+.restaurant-info{
+  color: white;
+}
+
+.reviews{
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+#new_review{
+  color: white;
+}
+
+#new_restaurant{
+  color: white;
+}
+
+.review-box{
+  margin-top: 20px;
+}

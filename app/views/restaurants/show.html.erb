@@ -1,0 +1,28 @@
+<div class="container">
+  <h2 style="color:white"><%= @restaurant.name %></h2>
+
+  <div class="restaurant-info">
+    <h4>Address</h4>
+      <%= @restaurant.address %>
+
+      <p>Phone number: <%= @restaurant.phone_number %></p>
+
+      <p>Type of food: <%= @restaurant.category %></p>
+  </div>
+
+  <div class = "reviews">
+    <h4 style="color:white">Reviews of the restaurant</h4>
+    <p style="margin:5px">Rating is out of 5</p>
+  </div>
+
+  <%= render "/shared/rating_form" %>
+
+  <div class="review-box">
+    <h4 style="color:white">Add a review for your favourite restaurant</h4>
+
+    <%= render "/shared/review_form" %>
+  </div>
+
+  <p style="margin-top: 20px"> <%= link_to "Go back to list of restaurants", restaurants_path() %> </p>
+
+</div>
